@@ -1,5 +1,5 @@
 @use "variables";
-
+@use "extended";
 main {
   padding-top: 150px;
   padding-inline: 1.7rem;
@@ -26,9 +26,10 @@ main {
   }
   p {
     color: variables.$grey;
-    font-size: variables.$description_text;
-    font-size: 1rem;
-    line-height: 1.3rem;
+    // font-size: variables.$description_text;
+    
+      @extend .para !optional;
+    
   }
   .view_work {
     text-decoration: none;
@@ -54,12 +55,7 @@ main {
     h3 {
       font-size: 4rem;
     }
-    p {
-      font-size: 1.1rem;
-      margin-top: 1.5rem;
-      line-height: 1.5rem;
-    }
-    .view_work {
+     .view_work {
       font-size: 16px;
     }
   }

@@ -17,3 +17,11 @@
   margin-bottom: 1rem;
   line-height: 1.7rem;
 }
+
+@media (min-width: 680px) {
+  .para{
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    margin-bottom: 2rem;
+  }
+}

@@ -78,10 +78,16 @@
         @extend .image_after;
         // border: 2px solid red;
       }
+      position: relative;
+      top: 73px;
+      z-index: -2;
+     
       img {
         width: 200px;
         aspect-ratio: 1.2;
         object-fit: cover;
+        object-position: 6px 0px;
+        filter: grayscale(100%);
       }
     }
   }
@@ -94,15 +100,30 @@
       font-size: 1.4rem;
     }
   }
+
+
+  .tech{
+    h5{
+      margin-block: 5rem;
+
+    }
+  }
 }
 
 @media (min-width: 1024px) {
   .pmg {
     // for centered image comment the code below
-    display: flex;
-    // stop here
+    // display: flex;
+    // // stop here
     .img {
-      width: 300px;
+      &::after{
+        width: 300px !important;
+        left: 45px !important; 
+        top: -200px !important;
+      }
+      img{
+        width: 300px !important;}
+      
     }
   }
 }
