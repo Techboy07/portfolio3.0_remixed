@@ -18,7 +18,7 @@ const app = Vue.createApp({
           _id: "64fb6746dd55f8e532e4aba7",
           projectName: "Notaculus",
           projectDescription:
-            "this is a note taking app that is easily customizable with features like darkmode and user preferences such as accent colors,username e.t.c . It also implements authentication. built with react,typescript,material ui and firebase.",
+            "this is a note taking app that is easily customizable with features like darkmode and user preferences . It also implements authentication. built with react,typescript,material ui and firebase.",
           projectImage:
             "https://firebasestorage.googleapis.com/v0/b/portfolical.appspot.com/o/notaculus.png?alt=media&token=f774be9c-306b-4cfa-80ed-62488fdd748b",
           sourceCode: "https://github.com/Techboy07/Note-taking-app-v2",

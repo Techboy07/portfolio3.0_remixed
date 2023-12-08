@@ -57,7 +57,7 @@ nav {
     right: 0;
     top: 100px;
     height: 100vh;
-    width: 60%;
+    width: 100%;
     padding: 0px 50px;
     z-index: 200000000;
     background-color: variables.$nav_menu_bg;
@@ -132,6 +132,7 @@ nav {
         justify-content: flex-end;
         align-items: center;
         gap: 5%;
+        padding: 0;
       }
     }
   }
