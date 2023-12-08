@@ -59,23 +59,23 @@
       <div class="side" title="fixedsidebar">
         <div class="side-content">
           <!-- <marquee behavior="alternate" direction="right">caveman caveman caveman</marquee> -->
-          <a target="_blank" href="https://github.com/EMMANUEL-SUNMBOLA"
+          <a target="_blank" href="https://github.com/Techboy07"
             ><i class="fa-brands fa-github" title="my github"></i
           ></a>
           <br />
-          <a target="_blank" href="https://twitter.com/SunmbolaAdedayo"
+          <a target="_blank" href="https://x.com/Toluwal44093007"
             ><i class="fa-brands fa-twitter" title="my twitter"></i
           ></a>
           <br />
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/sunmbola-emmanuel-87a348247"
+            href="https://www.linkedin.com/in/tolu-temi-557775162"
             ><i class="fa-brands fa-linkedin" title="my linkedin"></i
           ></a>
           <br />
           <a
             target="_blank"
-            href="https://api.whatsapp.com/send?phone=2349030408140"
+            href="https://api.whatsapp.com/send?phone=2349076673849"
             ><i class="fa-brands fa-whatsapp" title="my whatsapp"></i
           ></a>
           <br />
@@ -161,7 +161,13 @@
 
           <!-- all    project     start    here -->
           <div class="work-wrapper" id="projects">
-            <div v-for="project in projects" class="projects-container">
+            <div
+              v-for="project in projects"
+              class="projects-container"
+              data-visible="false"
+              onmouseenter="changeTheSwitch"
+              onmouseenter="changeTheSwitch"
+            >
               <!-- the projects -->
               <div
                 :style="{backgroundImage: `url(${project.projectImage})`,backgroundSize:' cover '}"
@@ -219,11 +225,23 @@
             <button type="submit">Shoot</button>
           </form>
           <div class="icon-box">
-            <div class="icon-wrapper"><i class="fa-brands fa-twitter"></i></div>
-            <div class="icon-wrapper"><i class="fa-brands fa-github"></i></div>
-            <div class="icon-wrapper">
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
+            <a href="https://x.com/Toluwal44093007" target="_blank">
+              <div class="icon-wrapper">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </a>
+            <a href="http://github.com/Techboy07" target="_blank">
+              <div class="icon-wrapper">
+                <i class="fa-brands fa-github"></i>
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tolu-temi-557775162"
+              target="_blank"
+            >
+              <div class="icon-wrapper">
+                <i class="fa-brands fa-linkedin"></i></div
+            ></a>
           </div>
         </section>
       </div>
@@ -231,7 +249,7 @@
         <div class="right-content">
           <a
             target="_blank"
-            href="mailto:adedayoemmanuel729@gmail.com?subject=Hi Emmanuel"
+            href="mailto:technogodwr@gmail.com?subject=Hi Toluwalase"
             title="email"
             >babatunde toluwalase</a
           >
@@ -244,6 +262,10 @@
         CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-CAVECODES-
       </marquee>
     </footer>
+    <!-- vue injected template -->
+
+    <script src="/app.js"></script>
+    <!--  -->
 
     <script src="/main.js"></script>
   </body>

@@ -1,0 +1,4 @@
+observation 
+adjust nav
+add resume
+email

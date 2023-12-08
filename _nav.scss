@@ -51,7 +51,7 @@ nav {
   }
   .nav-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: absolute;
     right: 0;
@@ -59,6 +59,7 @@ nav {
     height: 100vh;
     width: 60%;
     padding: 0px 50px;
+    z-index: 200000000;
     background-color: variables.$nav_menu_bg;
     transition: 0.4s ease-in;
     transform: translateX(100%);
@@ -70,10 +71,12 @@ nav {
       display: flex;
       width: 200px;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: start;
       align-items: start;
+      gap: 15%;
       flex-wrap: wrap;
       height: 100%;
+      padding-top: 50px;
 
       li {
         list-style-type: none;
