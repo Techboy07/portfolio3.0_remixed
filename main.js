@@ -31,36 +31,66 @@ function changeTheSwitch(elem) {
   elem.setAttribute("data-visible", `${visible}`);
 }
 
-projectBody.forEach((elem) =>
-  elem.addEventListener("mouseenter", () => {
-    changeTheSwitch(elem);
-  })
-);
-
-projectBody.forEach((elem) =>
+projectBody.forEach((elem) => {
   elem.addEventListener("mouseleave", () => {
     changeTheSwitch(elem);
-  })
-);
+  });
+  elem.addEventListener("touchstart", () => {
+    changeTheSwitch(elem);
+  });
+  elem.addEventListener("touchend", () => {
+    changeTheSwitch(elem);
+  });
+  elem.addEventListener("mouseenter", () => {
+    changeTheSwitch(elem);
+  });
+  return;
+});
 
 // for scroll animation
 let options = {
-  root: document.querySelector("body"),
-  rootMargin: "0px",
   threshold: 1.0,
+  rootMargin: "50%",
 };
 
 const observer = new IntersectionObserver((entries, observer = observer) => {
   entries.forEach((entry) => {
-    if (entry.isVisible) {
-      console.log(target);
+    if (entry.isIntersecting) {
     }
   });
 }, options);
 
-function doOnScroll(elem) {
-  observer.observe(elem);
+// for email
+
+(function () {
+  emailjs.init("YOUR_PUBLIC_KEY");
+})();
+
+function sendTheMail(e) {
+  const fullName = document.querySelector("#txt").value;
+  const email = document.querySelector("#eml").value;
+  const textMessage = document.querySelector("#msg").value;
+
+  e.preventDefault();
+  const emailParams = {
+    name: `${fullName}`,
+    message: `clientEmail: ${email},
+    details: ${textMessage}`,
+  };
+
+  emailjs
+    .send(
+      "service_e0ld1ma",
+      "template_9f7ihqm",
+      emailParams,
+      "KktaVBb_AQy4Lt-3Q"
+    )
+    .then(() => {
+      alert("meassage succefully sent");
+      e.target.reset();
+    });
 }
 
-const card = projectBody[0];
-doOnScroll(card);
+const myform = document.querySelector("#myForm");
+
+myform.addEventListener("submit", sendTheMail);

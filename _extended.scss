@@ -1,3 +1,5 @@
+@use "variables";
+
 .image_after {
   z-index: -2;
   position: relative;
@@ -19,9 +21,16 @@
 }
 
 @media (min-width: 680px) {
-  .para{
+  .para {
     font-size: 1.5rem;
     line-height: 2.3rem;
     margin-bottom: 2rem;
   }
+}
+
+.button_hover {
+  background-color: #64ffda;
+  color: variables.$green;
+  border: none;
+  outline: none;
 }

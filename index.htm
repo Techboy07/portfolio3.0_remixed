@@ -20,7 +20,10 @@
     <link rel="shortcut icon" href="images/caveman.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/vue@3.0.2"></script>
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <title>TOLU'S PORTFOLIO</title>
   </head>
 
@@ -214,15 +217,20 @@
           <p>
             Got a question or proposal , or just want to say hello ? Go ahead.
           </p>
-          <form action="">
-            <input type="text" placeholder="Enter your name..." />
-            <input type="email" placeholder="Enter your email address..." />
+          <form id="myForm">
+            <input type="text" placeholder="Enter your name..." id="txt" />
+            <input
+              type="email"
+              placeholder="Enter your email address..."
+              id="eml"
+            />
             <input
               type="text"
               class="mess"
+              id="msg"
               placeholder="Type message here..."
             /><br />
-            <button type="submit">Shoot</button>
+            <button type="submit" style="cursor: pointer">Shoot</button>
           </form>
           <div class="icon-box">
             <a href="https://x.com/Toluwal44093007" target="_blank">

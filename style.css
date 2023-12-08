@@ -160,6 +160,13 @@ nav .nav-wrapper ul li span {
     margin-bottom: 2rem;
   }
 }
+.button_hover {
+  background-color: #64ffda;
+  color: #041b15;
+  border: none;
+  outline: none;
+}
+
 main {
   padding-top: 150px;
   padding-inline: 1.7rem;
