@@ -4,6 +4,17 @@ const app = Vue.createApp({
     return {
       projects: [
         {
+          _id: "6574c69d0bb06bd0535047ce",
+          projectName: "Audiophile",
+          projectDescription:
+            "An e-commerce application that serves as the ultimate destination for high-end headphones, earphones and speakers. The platform, meticulously built with Next.js",
+          projectImage:
+            "https://firebasestorage.googleapis.com/v0/b/portfolical.appspot.com/o/Screenshot%202023-12-09%20at%208.59.16%20PM.png?alt=media&token=abb46a4d-e183-422b-9911-0ad7194731a6",
+          sourceCode: "https://github.com/Techboy07/audiophile",
+          live: "http://audiophile-techboy07.vercel.app",
+          __v: 0,
+        },
+        {
           _id: "64fb65f2dd55f8e532e4aba1",
           projectName: "Ableton Website Clone",
           projectDescription:
