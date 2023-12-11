@@ -44,7 +44,7 @@ const app = Vue.createApp({
           projectImage:
             "https://firebasestorage.googleapis.com/v0/b/portfolical.appspot.com/o/project-images%2FScreenshot%202023-12-06%20at%202.12.44%20PM.png?alt=media&token=bf9bbe12-5a6a-45a4-8d59-01eec5b06878",
           sourceCode: "",
-          live: "https://scrunchiefy-18lyuzn02-techboy07.vercel.app/",
+          live: "https://scrunchiefy-app-techboy07.vercel.app/",
           __v: 0,
         },
         {
