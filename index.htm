@@ -182,26 +182,43 @@
               >
                 <div class="projectCardBody">
                   <h3>{{project.projectName}}</h3>
-                  <p>{{project.projectDescription}}</p>
-                  <div class="button-group">
-                    <a :href="project.live" target="_blank">
-                      <button>live..</button>
-                    </a>
-                    <!-- project.sourceCode -->
-                    <a
-                      :href="project.sourceCode"
-                      target="_blank"
-                      v-if="project.sourceCode"
-                    >
-                      <button>source</button>
-                    </a>
+                  <div class="button-flex" @click="showDetails(project)">
+                    <p>See Details</p>
+                    <span class="fa-solid fa-arrow-up-right-from-square"></span>
                   </div>
                 </div>
               </div>
               <!-- the pro -->
             </div>
-          </div>
 
+            <div class="project-details" v-bind:data-visible="visible">
+              <div class="hamburger" id="hamburger2" @click="showDetails">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+
+                <!-- <div class="bar bar3"></div> -->
+              </div>
+
+              <img
+                v-bind:src="viewedProject.projectImage"
+                alt="project image"
+                width="320"
+              />
+
+              <h4>{{viewedProject.projectName}}</h4>
+
+              <p>{{viewedProject.projectDescription}}</p>
+
+              <div class="button-group">
+                <a :href="viewedProject.live" target="_blank">
+                  <button>Live</button>
+                </a>
+                <a :href="viewedProject.sourceCode" target="_blank">
+                  <button>Source</button>
+                </a>
+              </div>
+            </div>
+          </div>
           <!-- all   projects    end    here -->
           <a
             target="_blank"

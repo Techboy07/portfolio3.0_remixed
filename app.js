@@ -2,6 +2,8 @@ const app = Vue.createApp({
   template: "",
   data() {
     return {
+      visible: false,
+      viewedProject: {},
       projects: [
         {
           _id: "6574c69d0bb06bd0535047ce",
@@ -79,6 +81,12 @@ const app = Vue.createApp({
         "http://portfolical-v1-api.onrender.com/projects"
       );
       return projects;
+    },
+
+    showDetails(project) {
+      this.visible = !this.visible;
+      this.viewedProject = project;
+      return this.visible;
     },
   },
 });

@@ -41,10 +41,11 @@
         text-transform: capitalize;
         background-color: variables.$card_overlay;
 
-        p {
+        p,
+        span {
           color: variables.$card_text;
           margin-block: 35px;
-          font-size: 0.875rem;
+          font-weight: bold;
         }
 
         .button-group {
@@ -90,4 +91,81 @@
       }
     }
   }
+}
+
+.project-details {
+  // display: none;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  position: fixed;
+  background-color: variables.$blue;
+  top: 0;
+  right: 0;
+  padding: 50px;
+  z-index: 20;
+  transform: translateY(100%);
+  transition: 0.4s ease-in;
+  &[data-visible="true"] {
+    transform: translateY(0);
+  }
+  .button-group {
+    display: inline-flex;
+    gap: 20px;
+    button {
+      color: #60f7d2;
+      border: 1px solid #60f7d2;
+      background-color: transparent;
+      border-radius: 0.25rem;
+      padding: 1rem 1.2rem;
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+      width: -moz-fit-content;
+      width: fit-content;
+      margin: 0;
+      font-family: "Roboto Mono", monospace;
+    }
+  }
+
+  img {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1px;
+    background-color: gray;
+  }
+  h4 {
+    color: white;
+    margin-block: 20px;
+  }
+  p {
+    font-size: 0.9rem;
+    line-height: auto;
+  }
+  .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    .bar {
+      position: relative;
+      background-color: variables.$light-green;
+      height: 3px;
+      width: 35px;
+      margin-bottom: 7px;
+    }
+    .bar1 {
+      transform: rotateZ(45deg) translateY(5px) translateX(7px);
+    }
+    .bar2 {
+      transform: rotateZ(-45deg);
+    }
+  }
+}
+
+.button-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
