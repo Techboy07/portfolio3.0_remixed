@@ -66,10 +66,14 @@ const observer = new IntersectionObserver((entries, observer = observer) => {
   emailjs.init("YOUR_PUBLIC_KEY");
 })();
 
+const nameInput = document.querySelector("#txt");
+const emailInput = document.querySelector("#eml");
+const textMessageInput = document.querySelector("#msg");
+
 function sendTheMail(e) {
-  const fullName = document.querySelector("#txt").value;
-  const email = document.querySelector("#eml").value;
-  const textMessage = document.querySelector("#msg").value;
+  const fullName = nameInput.value;
+  const email = emailInput.value;
+  const textMessage = textMessageInput.value;
 
   e.preventDefault();
   const emailParams = {

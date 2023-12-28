@@ -4,7 +4,6 @@
   .projects-container {
     width: 100%;
     display: block;
-    aspect-ratio: 1.5;
     &:nth-child(even) {
       .project-img {
         .projectCardBody {
@@ -26,6 +25,7 @@
       display: block;
       cursor: pointer;
       background-color: rgb(116, 116, 116);
+      aspect-ratio: 1.5;
       .projectCardBody {
         display: flex;
         opacity: 0;
@@ -68,9 +68,11 @@
 
 @media (min-width: 680px) {
   .projects-container {
+    aspect-ratio: 1.5;
     .project-img {
       height: 100%;
       width: 100%;
+      aspect-ratio: auto;
     }
   }
 }

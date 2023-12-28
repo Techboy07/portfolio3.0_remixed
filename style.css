@@ -229,7 +229,6 @@ main .view_work div {
 .work-wrapper .projects-container {
   width: 100%;
   display: block;
-  aspect-ratio: 1.5;
 }
 .work-wrapper .projects-container:nth-child(even) .project-img .projectCardBody {
   transform: translateY(10%) translateX(10%);
@@ -243,6 +242,7 @@ main .view_work div {
   display: block;
   cursor: pointer;
   background-color: rgb(116, 116, 116);
+  aspect-ratio: 1.5;
 }
 .work-wrapper .projects-container .project-img .projectCardBody {
   display: flex;
@@ -278,9 +278,13 @@ main .view_work div {
 }
 
 @media (min-width: 680px) {
+  .projects-container {
+    aspect-ratio: 1.5;
+  }
   .projects-container .project-img {
     height: 100%;
     width: 100%;
+    aspect-ratio: auto;
   }
 }
 @media (min-width: 1280px) {
@@ -294,6 +298,8 @@ main .view_work div {
   }
 }
 .contact {
+  position: relative;
+  z-index: 300000000;
   text-align: center;
 }
 .contact .icon-box {

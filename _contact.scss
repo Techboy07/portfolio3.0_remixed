@@ -3,6 +3,8 @@
 @use "extended";
 
 .contact {
+  position: relative;
+  z-index: 300000000;
   .icon-box {
     display: flex;
     font-size: 25px;
